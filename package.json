@@ -2,6 +2,7 @@
   "name": "abby-cv",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://abbytec.github.io/abby-cv",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
@@ -28,6 +29,7 @@
     "@vitejs/plugin-react": "^2.1.0",
     "eslint": "^8.23.1",
     "eslint-plugin-react": "^7.31.8",
+    "gh-pages": "^5.0.0",
     "node-sass": "^7.0.3",
     "sass": "^1.55.0",
     "vite": "^3.1.0"
