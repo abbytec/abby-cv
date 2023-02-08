@@ -1,0 +1,453 @@
+/*Paleta de colores NAV*/
+.App
+	--palette_BG1: #f7b1b1
+	--section_BG1: var(--palette_BG1)
+	--palette_BG2: #ffd8d8
+	--theme-accent: black
+	--theme-color: white
+	--link: #0275d8
+	--muted-color: #636c72
+	--social-btn-color: #dcf7f3
+
+	--palette_lighter_color: #fdffda
+	--palette_color: rgb(194, 46, 46)
+	--palette_color2: rgb(160, 10, 60)
+	--palette_color3: rgb(133, 6, 48)
+
+	/*Paleta de colores Content*/
+	--palette_contentBG1: #805841
+	--palette_contentBG2: #fdffda
+
+	--palette_border: 2px solid rgb(164, 94, 192)
+	--palette_border1: 2px solid var(--palette_contentBG2)
+	--palette_border2: 2px solid var(--palette_BG1)
+
+.dark-mode
+	--palette_BG1: #3b2409
+	--palette_BG2: #583f1b
+	--section_BG1: var(--palette_BG2)
+	--theme-accent: white
+	--theme-color: black
+	--link: #cc73ff
+	--muted-color: #abcbe0
+	--social-btn-color: #40867c
+
+	--palette_lighter_color: #f00
+	--palette_color: #c7c7c7
+	--palette_color2: #ca7272
+	--palette_color3: #fdffda
+
+	/*Paleta de colores Content*/
+	--palette_contentBG1: #c9b56e
+	--palette_contentBG2: #28202b
+
+	--palette_border: 2px solid rgb(255, 226, 64)
+	--palette_border1: 2px solid var(--palette_contentBG2)
+	--palette_border2: 2px solid var(--palette_BG1)
+
+#labelA
+	width: 75px
+	height: 30px
+	position: relative
+	display: block
+	background: #ebebeb
+	border-radius: 30px
+	box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4)
+	cursor: pointer
+	&:after
+		content: ""
+		width: 28px
+		height: 28px
+		position: absolute
+		top: 1px
+		left: 3px
+		background: linear-gradient(180deg,#777,#3a3a3a)
+		border-radius: 18px
+		box-shadow: 0px 5px 10px rgba(0,0,0,0.2)
+	svg
+		position: absolute
+		width: 20px
+		top: 7px
+		z-index: 100
+
+	svg.sun
+		left: 6px
+		color: #fff
+		fill: #fff
+		transition: 0.3s
+
+	svg.moon
+		left: 47px
+		color: #7e7e7e
+		fill: #7e7e7e
+		transition: 0.3s
+
+#labelA, #labelA:after
+	transition: 0.3s
+
+#darkmode-toggle
+	width: 0
+	height: 0
+	visibility: hidden
+
+#darkmode-toggle:checked + #labelA + .background
+	background: #242424
+
+#darkmode-toggle:checked + #labelA
+	background: #242424
+	&:after
+		left: 63px
+		transform: translateX(-20px)
+		background: linear-gradient(180deg,#ffcc89,#d8860b)
+	svg.sun
+		color: #7e7e7e
+		fill: #7e7e7e
+	svg.moon
+		color: #fff
+		fill: #fff
+
+a
+	color: var(--link)
+
+.text-muted, .blockquote-footer
+	color: var(--muted-color)!important
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap')
+
+section>p,
+section>*>p,
+section>*>*>p
+	font-family: 'Roboto Slab', serif
+
+.row
+	justify-content: center
+	align-items: baseline
+	padding-bottom: 0!important
+	padding-top: 0!important
+
+.col-md-3
+	padding: 0 20px!important
+	width: min-content
+	margin: 20px 0
+	display: inline-table
+
+.col-md-4
+	max-width: 100%
+
+.col-md-6
+	display: grid
+	width: 100%
+	h4
+		margin: auto
+	p
+		margin: auto 0
+		text-align: left
+
+.col-md-8
+	flex-basis: 80%
+
+@media screen and (max-width:1440px)
+	.col-md-6
+		max-width: 100%
+		width: 100%
+		margin: auto
+		justify-items: center
+		flex-basis: 80%
+	.col-md-8
+		max-width: 100%
+		width: 100%
+		margin: auto
+		justify-items: center
+	.col-md-1
+		width: 20%
+
+	#education + div
+		display: block
+
+	@media screen and (min-width:766px)
+		.row
+			justify-content: center
+
+		#home+.row
+			display: grid
+			max-width: 100%
+			width: 100%
+			margin: 0
+			justify-items: center
+
+		.row .col-md-8
+			display: grid
+			margin: 0
+
+.progress
+	width: 75% !important
+	height: 5px !important
+	position: fixed
+	bottom: 4px
+	margin: 0 !important
+	border-radius: 20px !important
+	padding-top: 0 !important
+	padding-left: 0 !important
+	padding-right: 0 !important
+	z-index: 100
+
+.progress-bar
+	height: 20px !important
+	bottom: 4px
+	margin: 0 !important
+	padding-top: 0 !important
+	padding-left: 0 !important
+	padding-right: 0 !important
+
+h1
+	margin-bottom: 0
+
+#interfaz
+	overflow: hidden
+	height: 100vh
+	z-index: 101
+	border: var(--palette_border1)
+	box-sizing: border-box
+	animation: changing-border-color 5s linear infinite
+
+@keyframes changing-border-color
+	0%
+		border: var(--palette_border2)
+		border-width: 4px
+
+	25%
+		border: var(--palette_border)
+		border-width: 4px
+
+	75%
+		border: var(--palette_border1)
+		border-width: 4px
+
+	100%
+		border: var(--palette_border2)
+		border-width: 4px
+
+/* Animación de cambio de colores */
+@keyframes changing-nav-color
+	0%
+		background-color: var(--palette_color3)
+
+	50%
+		background-color: var(--palette_color2)
+
+	100%
+		background-color: var(--palette_color3)
+
+.navSection
+	width: 260px
+	text-align: center
+	align-items: center
+	display: grid
+	justify-content: center
+
+#divMenu
+	display: flex
+	height: 70%
+
+#navigation
+	top: 0
+	left: 0
+	width: 260px
+	align-items: center
+	display: block
+	justify-content: center
+	background-color: var(--palette_BG1)
+	border-right: var(--palette_border)
+	color: var(--palette_color)
+
+#foto
+	height: 20%
+	top: 0
+	background-color: var(--palette_BG2)
+	display: table-cell
+
+#mynavMenu
+	padding: 15px 0 10em 0
+	width: 100%
+	list-style: none
+	overflow: hidden
+	text-align: center
+	font-size: .94rem
+	font-weight: 600
+	letter-spacing: 1px
+	li a
+		display: block
+		overflow: hidden
+		position: relative
+		text-transform: uppercase
+		transition: all .3s ease-out
+		color: var(--palette_color3)
+		text-align: center
+		padding: 14px 16px
+		text-decoration: none
+		margin-bottom: 1px
+
+	li:hover,
+	li a:hover
+		background-color: var(--theme-color)
+		color: var(--theme-accent)
+
+	li .active
+		color: var(--theme-color)
+		will-change: transform
+		animation-name: changing-nav-color
+		animation-duration: 4s
+		animation-iteration-count: infinite
+
+hr
+	color: var(--palette_lighter_color)
+	border-bottom: var(--palette_border)
+	border-top: none
+	margin: 0
+	padding: 0
+
+#interfaz .menuIcon
+	padding: 16px 16px
+	display: none
+	z-index: 1
+	position: fixed
+	color: var(--palette_color)
+	text-align: center
+	font-size: 1rem
+	font-weight: 600
+	border-radius: 50%
+
+#navfooter
+	padding: 0 0 15px 0
+	background-color: var(--palette_BG2)
+	font-weight: bold
+	color: var(--palette_color3)
+	font-size: 14px
+	position: absolute
+	display: block
+	bottom: 0
+	border-right: var(--palette_border)
+
+#content
+	background-color: var(--palette_contentBG2)
+	color: var(--palette_contentBG1)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 0px 15px 0 15px
+	position: relative
+	overflow: auto
+	width: 100%
+
+#content * div,h1,h3,h2
+	padding: 20px 15px
+
+section>div:nth-child(2)
+	padding: 0
+
+section
+	padding: 0
+	> p, li
+		margin: auto 5%
+
+.blockquote
+	margin-bottom: 20px
+	border-left: 0.25rem solid var(--palette_BG1)
+
+#content::-webkit-scrollbar
+	width: 10px
+
+#content::-webkit-scrollbar-track
+	background-color: var(--palette_lighter_color)
+	border-radius: 75px
+
+#content::-webkit-scrollbar-thumb
+	background-color: var(--palette_contentBG1)
+	border-radius: 75px
+
+@media screen and (max-width: 765px)
+	#foto
+		padding-top: 46px
+		display: inline-table
+
+	#content
+		padding-top: 40px
+	#home>div>div
+		align-content: center
+		display: flex
+		align-items: center
+		text-align: center
+		flex-wrap: wrap
+
+	.col-md-3
+		padding: 0!important
+		width: min-content
+
+	.col-md-6, .col-md-4 + .col-md-8
+		flex-basis: 100%
+		flex-grow: 1
+		padding: 20px 0!important
+
+	#contentDiv
+		width: 100%
+		padding: 20px 5px
+
+	#navigation
+		display: none
+		background-color: var(--palette_BG1)
+		width: 100%
+		height: 100%
+		position: relative
+		&.opened
+			display: block
+			position: fixed
+
+	#navfooter, .navSection
+		display: block
+		width: 100%
+		border-right: none
+
+	#interfaz
+		height: calc(var(--vh, 1vh) * 100)
+		z-index: 101
+		a.menuIcon
+			display: inline-table
+		a.menuIcon:hover
+			background-color: var(--palette_lighter_color)
+			color: black
+		&.opened a.menuIcon
+			z-index: 1
+	.progress
+		transition-duration: 5s
+		display: none
+
+@media screen and (max-height: 580px)
+	#foto
+		padding-top: 10px
+
+	#home>div>div
+		align-content: center
+		align-items: center
+		text-align: center
+		flex-wrap: wrap
+		width: 100%
+
+	#divMenu
+		flex-direction: column
+		height: calc(100% - 292px)
+
+	.navSection
+		justify-content: start
+
+	#mynavMenu
+		padding: 0
+		overflow: scroll
+		ul
+			display: flex
+
+	.col-md-3
+		padding: 0!important
+		width: min-content

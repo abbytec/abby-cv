@@ -1,0 +1,21 @@
+.btnPaleta
+    color: var(--palette_color3)
+    background-color: var(--palette_BG1)
+    &:hover
+        background-color: var(--palette_contentBG1)
+        color: var(--theme-color)
+        cursor: pointer
+.bigicon
+    font-size: 35px
+    color: var(--palette_color)
+
+.form-group
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+@media screen and (max-width: 765px)
+    .form-group
+        padding: 0!important
+    #contact> h2 + .col-md-12
+        padding: 0!important

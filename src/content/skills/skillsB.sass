@@ -1,0 +1,118 @@
+.tablaSkillsGenerica
+    border-collapse: separate
+    border-spacing: 3em 1em
+    margin: 20px auto
+    tbody
+        tr
+            width: 100%
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+        td
+            border-radius: 20px
+            text-align: center
+            background-color: var(--section_BG1)
+            border-style: solid
+            border-color: var(--palette_color)
+            padding: 5px 15px
+            width: 100%
+            max-width: 550px
+            margin: 1vh
+            color: var(--palette_color3)
+            font-weight: 600
+            vertical-align: middle
+            border-collapse: collapse
+
+            :first-child
+                width: 20%
+
+            :last-child
+                width: 80%
+                position: relative
+
+            div
+                vertical-align: middle
+                border-collapse: collapse
+                margin: auto
+                display: inline-block
+                padding: inherit
+                justify-content: center
+                align-items: center
+                padding: 15px 0!important
+
+.card
+    padding: 0 !important
+    align-content: center
+    aspect-ratio: 4/5
+    height: 230px
+    min-width: 180px
+    margin: auto
+    overflow: hidden
+    transition: transform .2s
+    &:hover >:last-child
+        bottom: 0px
+        display: block
+        transition: all 0.45s ease
+
+    &.touchstart >:last-child
+        bottom: 0px
+        display: block
+        transition: all 0.45s ease
+
+.col-md-3>card
+    border-width: 4px
+
+.card-body
+    height: 180px
+    display: flex
+    align-items: center
+    vertical-align: middle
+    align-content: center
+    justify-content: center
+    flex-wrap: wrap
+
+.card-body>img, .card-footer>img
+    max-width: 100%
+    max-height: 100%
+    height: 130px
+    width: 130px
+    display: block
+    margin: auto
+
+.card-header,
+.card-footer
+    display: block
+    text-align: center
+    padding: .75rem 1.25rem
+    background-color: rgba(0, 0, 0, 0.45)
+    width: 100%
+    font-size: 16px!important
+    font-weight: 600
+    letter-spacing: normal
+
+.card-footer
+    position: absolute
+    bottom: -176px
+    height: 186px
+
+.card-header
+    position: relative
+    border-radius: 0!important
+
+@media screen and (max-width: 765px)
+    .tablaSkillsGenerica
+        border-collapse: collapse
+    .card
+        align-content: center
+        aspect-ratio: 5/4
+        max-width: 100%
+        max-height: 100%
+        margin: 1em 1em
+
+@media screen and (max-height: 580px)
+    .card
+        align-content: center
+        aspect-ratio: 5/4
+        max-width: 100%
+        max-height: 100%
+        margin: 1em 1em

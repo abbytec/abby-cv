@@ -1,0 +1,65 @@
+.tg
+    border-collapse: collapse
+    border-spacing: 0
+    margin: auto
+    width: 70%
+    tbody
+        tr:nth-child(3n)
+            td:first-of-type
+                background-color: #ffdada
+            td:last-of-type
+                background-color: #ffe1c5
+        tr:nth-child(3n+1)
+            td:first-of-type
+                background-color: #e4fffb
+            td:last-of-type
+                background-color: #ceffce
+        tr:nth-child(3n+2)
+            td:first-of-type
+                background-color: #fde1ff
+            td:last-of-type
+                background-color: #feffda
+
+        tr
+
+            td
+                border-color: black
+                border-style: solid
+                border-width: 1px
+                font-family: Arial, sans-serif
+                font-size: 14px
+                overflow: hidden
+                padding: 10px 5px
+                word-break: normal
+                font-weight: 600
+
+            .tg-cell
+                color: #000000
+                text-align: center
+                vertical-align: top
+                div
+                    font-weight: 400
+                    vertical-align: middle
+                    text-align: left
+                    padding: 10px!important
+                    display: grid
+                    a
+                        margin: 3px
+                        color: #000000!important
+
+.list
+    list-style: inside
+    li
+        margin-bottom: 3px
+        line-height: calc( 30px - 0.1vw )
+        max-width: 100em
+
+@media screen and (max-width: 765px)
+    .tg
+        width: 100%
+    #col-tabla
+        padding: 20px 0px !important
+
+@media screen and (max-height: 580px)
+    .tg
+        width: 100%

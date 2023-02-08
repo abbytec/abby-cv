@@ -1,0 +1,145 @@
+{
+	"stack": [
+		{
+			"nombre": "Front-end",
+			"elementos": [
+				{
+					"titulo": "HTML, CSS, JavaScript y TypeScript",
+					"descripcion": "Creando páginas web :3",
+					"broma": "Error 418 - I'm a teapot :D"
+				},
+				{
+					"titulo": "Bootstrap, Pug, SASS y SCSS",
+					"descripcion": "Con esto las creo mas rápidamente ^u^",
+					"broma": "Veloz no?"
+				},
+				{
+					"titulo": "React (+Redux)",
+					"descripcion": "El buen SSR (Server Side Rendering), testing con Jest",
+					"broma": "Mi primer framework <3 \nDato de color: Esta web está hecha en react!"
+				},
+				{
+					"titulo": "Angular",
+					"descripcion": "El buen CSR (Client Side Rendering), testing con Jasmine y Karma",
+					"broma": "Webpack 5, empaqueta tus problemas en un solo lugar!"
+				},
+				{
+					"titulo": "VueJS (Nuxt.JS y Vuex), testing con Jest",
+					"descripcion": "Bueno para SEO ya que ofrece muy alta performance",
+					"broma": "Ensaladas de HTML, CSS y JS listas"
+				},
+				{
+					"titulo": "RxJS",
+					"descripcion": "Una librería para manejar estados",
+					"broma": "No, lamentablemente no maneja el estado de mi billetera... Sigue vacia :/"
+				}
+			]
+		},
+
+		{
+			"nombre": "Back-end / Multiproposito",
+			"elementos": [
+				{
+					"titulo": "MySQL, PostgreSQL MongoDB, Redis, Couchbase, ElasticSearch y Neo4j",
+					"descripcion": "Bases de datos",
+					"broma": "Persiste y venceras (?"
+				},
+				{
+					"titulo": "Node.Js (Express / Loopback 4 / Electron)",
+					"descripcion": "Simplemente excelente, manejo testing con Mocha y Chai",
+					"broma": "Me alcanzas un hielo para el event loop?"
+				},
+				{
+					"titulo": "Java (Maven / Spring)",
+					"descripcion": "Write Once, Run Everywhere",
+					"broma": "<GC Overhead Limit Exceeded>"
+				},
+				{
+					"titulo": "Python",
+					"descripcion": "Fácil, práctico y multiparadigma",
+					"broma": "Te lo puede decir una IA"
+				},
+				{
+					"titulo": "Go",
+					"descripcion": "Lenguaje para crear apis veloces, basado en rutinas",
+					"broma": "La fusion de python con C++"
+				},
+				{
+					"titulo": "C/C++",
+					"descripcion": "Creando todo...",
+					"broma": "Literalmente todo"
+				},
+				{
+					"titulo": "Assembler",
+					"descripcion": "Lenguaje maquina",
+					"broma": "Insane and funny development"
+				},
+				{
+					"titulo": "Solidity",
+					"descripcion": "Desarrollo de smart contracts",
+					"broma": "Get your free tokens at..."
+				},
+				{
+					"titulo": "Shell",
+					"descripcion": "El CLI del SO",
+					"broma": "touch boton.txt"
+				}
+			]
+		},
+		{
+			"nombre": "Movil",
+			"elementos": [
+				{
+					"titulo": "React Native",
+					"descripcion": "Aplicaciones nativas con React",
+					"broma": "React para el celu"
+				},
+				{
+					"titulo": "Native Script",
+					"descripcion": "Aplicaciones nativas con Angular o React",
+					"broma": "No es mi favorito..."
+				},
+				{
+					"titulo": "Flutter",
+					"descripcion": "Desarrolla aplicaciones moviles facilmente usando Dart",
+					"broma": "Oh no, todo es un widget ahora"
+				}
+			]
+		},
+		{
+			"nombre": "Diseño UI/UX/Industrial",
+			"elementos": [
+				{
+					"titulo": "AdobeXD",
+					"descripcion": "Maquetacion y prototipado de software",
+					"broma": "rediseñando ando"
+				},
+				{
+					"titulo": "Figma",
+					"descripcion": "Maquetacion y diseño organizado de UI/UX y productos digitales",
+					"broma": "Live collaboration... Components everywhere"
+				},
+				{
+					"titulo": "Sketch",
+					"descripcion": "Maquetacion y diseño organizado de UI/UX",
+					"broma": "Pixel perfect... Symbols everywhere"
+				},
+				{
+					"titulo": "Canvas",
+					"descripcion": "Diseños bonitos",
+					"broma": "Con plantillas y todo!"
+				},
+				{
+					"titulo": "SolidWorks",
+					"descripcion": "Diseña piezas en 3D",
+					"broma": "Y también comprobar si son físicamente útiles"
+				},
+				{
+					"titulo": "AutoCAD",
+					"descripcion": "Diseños precisos",
+					"broma": "Milimetricamente hablando"
+				}
+			]
+		}
+	]
+}
