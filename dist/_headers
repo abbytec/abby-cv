@@ -1,0 +1,6 @@
+https://abbycv.pages.dev/
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: document-domain=()
+  Content-Security-Policy: frame-ancestors http://abbydev.ml; default-src 'self'; script-src 'self' 'unsafe-inline' 'sha384-i61gTtaoovXtAbKjo903+O55Jkn2+RtzHtvNez+yI49HAASvznhe9sZyjaSHTau9' 'sha384-/ltdvC9cqvBakeiWZNe+1QPGcf27hC0i75kvbPR+dz2+PVn5T0vRDSJzkc5APXmC' 'sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct'; connect-src 'self' https://api.emailjs.com; img-src 'self'; style-src 'self' 'sha256-cR0YMCK7yE+nS7+w4TnmGp106VUeC0ZNnF3FEOwUZA8=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' *.googleapis.com https://cdn.jsdelivr.net 'sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N' 'sha256-vRkzjm/eem2C4oetMemP4rydMW/i+Ukj+Q9KzHLWzmY='; base-uri 'self'; form-action 'self'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src-elem 'self' 'sha384-i61gTtaoovXtAbKjo903+O55Jkn2+RtzHtvNez+yI49HAASvznhe9sZyjaSHTau9' 'sha384-/ltdvC9cqvBakeiWZNe+1QPGcf27hC0i75kvbPR+dz2+PVn5T0vRDSJzkc5APXmC' 'sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct'
