@@ -82,7 +82,7 @@ const Home = () => {
       </ol>
       <div className="carousel-inner w-100">
         <div className="carousel-item img-fluid">
-          <img onLoad={loadedImgs} className="d-block w-100" alt="Primera imágen del carrusel" src="./content/carrousel/image1.webp"></img>
+          <img onLoad={loadedImgs} className="d-block w-100" alt="Primera imágen del carrusel" src="/content/carrousel/image1.webp"></img>
           <div className="carousel-caption">
             <p>
               Atardecer
@@ -93,7 +93,7 @@ const Home = () => {
           </div>
         </div>
         <div className="carousel-item img-fluid">
-          <img className="d-block w-100" alt="Segunda imágen del carrusel" src="./content/carrousel/image2.webp"></img>
+          <img className="d-block w-100" alt="Segunda imágen del carrusel" src="/content/carrousel/image2.webp"></img>
           <div className="carousel-caption">
             <p>
               Atardecer
@@ -104,7 +104,7 @@ const Home = () => {
           </div>
         </div>
         <div className="carousel-item img-fluid active">
-          <img className="d-block w-100" alt="Tercer imágen del carrusel" src="./content/carrousel/image3.webp"></img>
+          <img className="d-block w-100" alt="Tercer imágen del carrusel" src="/content/carrousel/image3.webp"></img>
           <div className="carousel-caption">
             <p>
               Foto nocturna
