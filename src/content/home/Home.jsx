@@ -4,6 +4,9 @@ import { loadedImgs } from '../../App.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faLinkedin, faDiscord, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faCaretRight, faCaretLeft, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import image1 from '../../assets/content/carrousel/image1.webp'
+import image2 from '../../assets/content/carrousel/image2.webp'
+import image3 from '../../assets/content/carrousel/image3.webp'
 
 const Home = () => {
   function toggleMode() {
@@ -82,7 +85,7 @@ const Home = () => {
       </ol>
       <div className="carousel-inner w-100">
         <div className="carousel-item img-fluid">
-          <img onLoad={loadedImgs} className="d-block w-100" alt="Primera imágen del carrusel" src="/content/carrousel/image1.webp"></img>
+          <img onLoad={loadedImgs} className="d-block w-100" alt="Primera imágen del carrusel" src={image1}></img>
           <div className="carousel-caption">
             <p>
               Atardecer
@@ -93,7 +96,7 @@ const Home = () => {
           </div>
         </div>
         <div className="carousel-item img-fluid">
-          <img className="d-block w-100" alt="Segunda imágen del carrusel" src="/content/carrousel/image2.webp"></img>
+          <img className="d-block w-100" alt="Segunda imágen del carrusel" src={image2}></img>
           <div className="carousel-caption">
             <p>
               Atardecer
@@ -104,7 +107,7 @@ const Home = () => {
           </div>
         </div>
         <div className="carousel-item img-fluid active">
-          <img className="d-block w-100" alt="Tercer imágen del carrusel" src="/content/carrousel/image3.webp"></img>
+          <img className="d-block w-100" alt="Tercer imágen del carrusel" src={image3}></img>
           <div className="carousel-caption">
             <p>
               Foto nocturna
