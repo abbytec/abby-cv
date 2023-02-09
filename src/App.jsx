@@ -24,7 +24,7 @@ function App() {
 	return (
 		<div id="App" className="App">
 			<div id="interfaz" style={{ display: "flex", position: "absolute", width: "100%", boxSizing: "border-box" }}>
-				<Router>
+				<Router basename='/abby-cv'>
 					<Nav></Nav>
 					<div id="content">
 						<Content style={{ display: "block", maxWidth: "100%" }}></Content>
