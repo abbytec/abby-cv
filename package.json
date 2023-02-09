@@ -2,7 +2,7 @@
   "name": "abby-cv",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://abbytec.github.io/abby-cv",
+  "homepage": "https://abbytec.github.io/abby-cv/",
   "type": "module",
   "scripts": {
     "deploy": "npm run build && gh-pages -d dist",
