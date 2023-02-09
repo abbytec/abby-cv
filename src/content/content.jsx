@@ -4,7 +4,7 @@ import "external-svg-loader";
 
 
 // eslint-disable-next-line no-unused-vars
-import Home from '.\\home\\home';
+import Home from './home/Home';
 import Education from './education/Education';
 import Skills2 from './skills/Skills';
 import Experiences from './experiences/Experiences';
