@@ -1,6 +1,8 @@
 name: Build project
 on:
   push:
+    branches:
+      - master
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -21,8 +23,3 @@ jobs:
         run: |
           npm i
           npm run build
-      - name: Config an deploy git
-        run: |
-          git config --global user.name "abbytec"
-          git config --global user.email "gpsmurfs@gmail.com"
-          npm run deploy
