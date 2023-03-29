@@ -9,6 +9,9 @@ const Skills = () => {
       <h2 className="text-center">
         Habilidades
       </h2>
+      <h2 className="text-center">
+        Pagina en construcción
+      </h2>
 
       <div className="tabbable" id="tabs-857045">
         <ul className="nav nav-tabs">
