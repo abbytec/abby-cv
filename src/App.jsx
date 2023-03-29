@@ -14,8 +14,12 @@ function App() {
 
 
 	document.addEventListener('readystatechange', () => {
-		if (document.readyState === "complete")
-			document.getElementsByClassName("progress")[0].style.display = "none";
+		if (document.readyState === "complete") {
+			if (document.getElementsByClassName("progress")[0] != undefined) {
+				document.getElementsByClassName("progress")[0].style.display = "none";
+			}
+		}
+
 	});
 	// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 	let vh = window.innerHeight * 0.01;
@@ -24,7 +28,7 @@ function App() {
 	return (
 		<div id="App" className="App">
 			<div id="interfaz" style={{ display: "flex", position: "absolute", width: "100%", boxSizing: "border-box" }}>
-				<Router basename='/abby-cv'>
+				<Router basename='/'>
 					<Nav></Nav>
 					<div id="content">
 						<Content style={{ display: "block", maxWidth: "100%" }}></Content>
