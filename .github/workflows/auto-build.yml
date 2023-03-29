@@ -22,5 +22,6 @@ jobs:
           git config --global user.name "abbytec"
           git config --global user.email "gpsmurfs@gmail.com"
       - run: |
+          npm i
           npm run build
           npm run deploy
